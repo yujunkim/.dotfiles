@@ -2,6 +2,9 @@ echo "vim | start"
 
 echo "vim | link vimrc"
 ln -i ~/.dotfiles/vim/.vimrc ~/.vimrc
+mkdir ~/.dotfiles/vim/bundle
+mkdir ~/.dotfiles/vim/backupdir
+mkdir ~/.dotfiles/vim/undodir
 
 echo "vim | download vundle"
 git clone https://github.com/gmarik/Vundle.vim.git ~/.dotfiles/vim/bundle/Vundle.vim
