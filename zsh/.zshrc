@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.dotfiles/zsh/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -51,18 +51,18 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/yujun/.rvm/gems/ruby-2.1.2/bin:/Users/yujun/.rvm/gems/ruby-2.1.2@global/bin:/Users/yujun/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/yujun/.rvm/bin"
+export PATH="$HOME/.rvm/gems/ruby-2.1.2/bin:$HOME/.rvm/gems/ruby-2.1.2@global/bin:$HOME/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+ export EDITOR='vim'
+else
+ export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -84,15 +84,14 @@ export TERM=xterm-256color
 export CLICOLOR=true
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-alias ls='ls -FGw' # 한글 표시, 디렉토리면 뒤에 / 표시, 확장자별 색상 표시
+alias ls='ls -FG' # 한글 표시, 디렉토리면 뒤에 / 표시, 확장자별 색상 표시
 alias vi="vi '+syn on'" # vi 쓸 때 syntax highlighting - 이건 보너스
 alias ll="ls -lv"
 alias l='ls -alh'
 
 #alias ls='ls -G'
-alias vim='mvim -v'
+alias vim="$EDITOR -v"
 alias tmux="TERM=screen-256color-bce tmux"
-export EDITOR='vim'
 
 alias tl='tmux list-sessions'
 alias ta='tmux attach-session -t'
