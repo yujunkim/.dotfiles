@@ -1,0 +1,158 @@
+The system is: Darwin - 13.2.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/2.8.10.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/2.8.10.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec158142748/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec158142748.dir/build.make CMakeFiles/cmTryCompileExec158142748.dir/build
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_progress_report /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec158142748.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec158142748.dir/testCCompiler.c.o   -c /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec158142748
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec158142748.dir/link.txt --verbose=1
+/usr/bin/cc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec158142748.dir/testCCompiler.c.o  -o cmTryCompileExec158142748  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec270850691/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec270850691.dir/build.make CMakeFiles/cmTryCompileExec270850691.dir/build
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_progress_report /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o   -c /Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec270850691
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec270850691.dir/link.txt --verbose=1
+/usr/bin/cc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec270850691   
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin13.2.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec270850691 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec270850691/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec270850691.dir/build.make CMakeFiles/cmTryCompileExec270850691.dir/build]
+  ignore line: [/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_progress_report /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o   -c /Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec270850691]
+  ignore line: [/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec270850691.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec270850691   ]
+  ignore line: [Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)]
+  ignore line: [Target: x86_64-apple-darwin13.2.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec270850691 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.9.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec270850691] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec270850691.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  remove lib [System]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4095713108/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4095713108.dir/build.make CMakeFiles/cmTryCompileExec4095713108.dir/build
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_progress_report /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4095713108.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec4095713108.dir/testCXXCompiler.cxx.o -c /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec4095713108
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4095713108.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4095713108.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec4095713108  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec317289264/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec317289264.dir/build.make CMakeFiles/cmTryCompileExec317289264.dir/build
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_progress_report /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o -c /Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec317289264
+/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec317289264.dir/link.txt --verbose=1
+/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec317289264   
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin13.2.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec317289264 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec317289264/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec317289264.dir/build.make CMakeFiles/cmTryCompileExec317289264.dir/build]
+  ignore line: [/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_progress_report /Users/yujun/.tmux/vendor/tmux-mem-cpu-load/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o -c /Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec317289264]
+  ignore line: [/Users/yujun/.homebrew/Cellar/cmake/2.8.10.2/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec317289264.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec317289264   ]
+  ignore line: [Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)]
+  ignore line: [Target: x86_64-apple-darwin13.2.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o cmTryCompileExec317289264 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.9.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec317289264] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec317289264.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  remove lib [System]
+  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: []
+
+

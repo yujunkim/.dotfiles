@@ -1,0 +1,7 @@
+bundle
+undodir
+backupdir
+*.swp
+.netrwhist
+.oh-my-zsh
+!.empty
