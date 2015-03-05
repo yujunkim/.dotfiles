@@ -69,6 +69,7 @@ Bundle 'fugitive.vim'
 Bundle 'fatih/vim-go'
 Bundle 'dgryski/vim-godef'
 Bundle 'solarnz/thrift.vim'
+Bundle 'jvoorhis/coq.vim'
 
     filetype plugin indent on   " Automatically detect file types.
     syntax on                   " Syntax highlighting
