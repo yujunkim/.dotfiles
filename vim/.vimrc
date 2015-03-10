@@ -70,6 +70,9 @@ Bundle 'fatih/vim-go'
 Bundle 'dgryski/vim-godef'
 Bundle 'solarnz/thrift.vim'
 Bundle 'jvoorhis/coq.vim'
+Bundle 'perl-support.vim'
+Bundle 'trefis/coquille.git'
+Bundle 'def-lkb/vimbufsync'
 
     filetype plugin indent on   " Automatically detect file types.
     syntax on                   " Syntax highlighting
@@ -221,6 +224,14 @@ Bundle 'jvoorhis/coq.vim'
     map <leader>\ <C-W>\|
     map <leader>_ <C-W>_
 
+    "
+    " for coq
+    map <S-L> :CoqLaunch<CR>
+    map <S-N> :CoqNext<CR>
+    map <S-U> :CoqUndo<CR>
+    map <S-K> :CoqKill<CR>
+    map <S-T> :CoqToCursor<CR>
+    let g:coquille_auto_move='true'
 
     " Wrapped lines goes down/up to next row, rather than next line in file.
     noremap j gj
@@ -260,8 +271,8 @@ Bundle 'jvoorhis/coq.vim'
 
     " The following two lines conflict with moving to top and
     " bottom of the screen
-        map <S-H> gT
-        map <S-L> gt
+    "map <S-H> gT
+    "map <S-L> gt
 
         map <leader>h :tabmove -1<CR>
         map <leader>l :tabmove +1<CR>
@@ -489,6 +500,7 @@ let g:gist_show_privates = 1
 let g:ctrlp_extensions = ['funky']
 let g:ctrlp_funky_syntax_highlight = 1
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+let g:CoqIDEDefaultKeyMap = 1
 nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>

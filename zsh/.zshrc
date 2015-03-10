@@ -81,12 +81,10 @@ export CLICOLOR=true
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 alias ls='ls -FG' # 한글 표시, 디렉토리면 뒤에 / 표시, 확장자별 색상 표시
-alias vi="vi '+syn on'" # vi 쓸 때 syntax highlighting - 이건 보너스
 alias ll="ls -lv"
 alias l='ls -alh'
 
 #alias ls='ls -G'
-alias vim="$EDITOR -v"
 alias tmux="TERM=screen-256color-bce tmux"
 
 alias tl='tmux list-sessions'
