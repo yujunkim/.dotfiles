@@ -96,7 +96,9 @@ alias memo='cd ~/memo ; vim'
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 alias ser='ssh -i ~/.ssh/hi_id_rsa 128.199.89.244'
+alias mar='ssh plmmoknn@martini.snucse.org'
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=/usr/local/share/python:/usr/local/bin:$PATH
 export PATH=/opt/homebrew-cask/Caskroom/coqide/8.4pl5/CoqIDE_8.4pl5.app/Contents/MacOS:$PATH
@@ -104,3 +106,5 @@ export PATH=/opt/homebrew-cask/Caskroom/coqide/8.4pl5/CoqIDE_8.4pl5.app/Contents
 
 # OPAM configuration
 . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

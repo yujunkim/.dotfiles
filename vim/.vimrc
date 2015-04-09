@@ -226,10 +226,19 @@ Bundle 'def-lkb/vimbufsync'
 
     "
     " for coq
-    map <S-L> :CoqLaunch<CR>
-    map <S-N> :CoqNext<CR>
-    map <S-U> :CoqUndo<CR>
-    map <S-K> :CoqKill<CR>
+    let g:coq_toggle=0
+    function! CoqToggle()
+      if g:coq_toggle == 0
+        let g:coq_toggle = 1
+        execute ":CoqLaunch"
+      else
+        let g:coq_toggle = 0
+        execute ":CoqKill"
+      endif
+    endfunction
+    map <silent> <leader>c :call CoqToggle()<CR>
+    map <S-U> :CoqNext<CR>
+    map <S-I> :CoqUndo<CR>
     map <S-T> :CoqToCursor<CR>
     let g:coquille_auto_move='true'
 
@@ -271,8 +280,8 @@ Bundle 'def-lkb/vimbufsync'
 
     " The following two lines conflict with moving to top and
     " bottom of the screen
-    "map <S-H> gT
-    "map <S-L> gt
+    map <S-H> gT
+    map <S-L> gt
 
         map <leader>h :tabmove -1<CR>
         map <leader>l :tabmove +1<CR>
