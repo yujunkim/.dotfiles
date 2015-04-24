@@ -73,6 +73,7 @@ Bundle 'jvoorhis/coq.vim'
 Bundle 'perl-support.vim'
 Bundle 'trefis/coquille.git'
 Bundle 'def-lkb/vimbufsync'
+Bundle 'ervandew/eclim'
 
     filetype plugin indent on   " Automatically detect file types.
     syntax on                   " Syntax highlighting
