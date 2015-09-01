@@ -94,10 +94,12 @@ alias croak='ssh -i ~/.ssh/watcha_music.pem croak@ec2-54-248-17-108.ap-northeast
 alias sa='eval `ssh-agent`; ssh-add ~/.ssh/watcha_music.pem ; ssh-add ~/.ssh/dry.pem'
 alias memo='cd ~/memo ; vim'
 
+alias rmvim='rm -rf ~/.dotfiles/vim/tmp/swap/*'
+
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
-alias ser='ssh -i ~/.ssh/hi_id_rsa 128.199.89.244'
+alias ser='ssh -i ~/.ssh/hi_id_rsa 128.199.107.14'
 alias mar='ssh plmmoknn@martini.snucse.org'
 alias cdser='cd ~/Dropbox/server'
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
