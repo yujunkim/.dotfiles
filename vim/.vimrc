@@ -1,8 +1,27 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+set runtimepath+=~/.dotfiles/vim
+autocmd BufWritePost ~/.dotfiles/vim/doc/* :helptags ~/.dotfiles/vim/doc
 set nocompatible
+
+" Sets how many lines of history VIM has to remember
+set history=1000
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = " "
+let g:mapleader = " "
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" :W sudo saves the file
+" (useful for handling the permission-denied error)
+command W w !sudo tee % > /dev/null
 
 " vundle
 filetype off
@@ -76,17 +95,6 @@ Bundle 'ntpeters/vim-better-whitespace'
 autocmd BufWritePre <buffer> StripWhitespace
 
 
-""""""""""""""""""""""""""""""
-" => bufExplorer plugin
-""""""""""""""""""""""""""""""
-Bundle 'jlanzarotta/bufexplorer'
-
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-let g:bufExplorerFindActive=1
-let g:bufExplorerSortBy='mru'
-map <leader>o :BufExplorer<cr>j
-
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
@@ -113,6 +121,10 @@ let g:ctrlp_custom_ignore = {
       \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+map <leader>o :CtrlPBuffer<cr><C-P>
+map <C-O> :buffer #<cr>
+
 
 let g:ctrlp_prompt_mappings = {
   \ 'PrtBS()':              ['<bs>', '<c-]>', '<c-h>'],
@@ -242,24 +254,6 @@ Bundle 'scrooloose/syntastic'
 
 
 
-
-" Sets how many lines of history VIM has to remember
-set history=1000
-
-" Set to auto read when a file is changed from the outside
-set autoread
-
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = " "
-let g:mapleader = " "
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -455,7 +449,7 @@ map 0 ^
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
 " Open Ag and put the cursor in the right position
-map <leader>g :Ag --ignore log<SPACE>
+map <leader>g :Ag! --ignore log<SPACE>"
 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
@@ -821,7 +815,7 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Specify the behavior when switching between buffers
 try
-  set switchbuf=useopen,usetab,newtab
+  set switchbuf=useopen
 catch
 endtry
 
@@ -916,4 +910,5 @@ set directory=~/.dotfiles/vim/tmp/swap
 
 filetype plugin on
 filetype indent on
+
 

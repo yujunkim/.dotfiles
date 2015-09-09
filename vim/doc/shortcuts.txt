@@ -1,0 +1,64 @@
+*shortcuts*
+leader
+———————
+a :
+b : buffer
+c : cope
+cd : change directory
+d :
+e : path
+f : mru
+g : search
+h : tabmove
+i :
+j :
+k :
+l : tabmove
+m :
+n : nerdtree
+o : bufferopen
+p : ctrlp
+q :
+r :
+s : spell
+t : tab
+u :
+v :
+w : save
+x :
+y :
+z :
+/ : hlsearch
+
+——————
+
+ctrl
+———————
+a : move to first
+b : left
+c : signal
+d : pagedown
+e : move to last
+f : right
+g :
+h : window left
+i :
+j : window bottom
+k : window up
+l : window right
+m : multiple cursor
+n : down
+o : back page
+p : up
+q :
+r : redo
+s : snippets
+t : tmux
+u : pageup
+v : visual block
+w : move window
+x :
+y :
+z : signal
+/ : comment
+= : autoindent

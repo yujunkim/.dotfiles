@@ -95,6 +95,7 @@ alias sa='eval `ssh-agent`; ssh-add ~/.ssh/watcha_music.pem ; ssh-add ~/.ssh/dry
 alias memo='cd ~/memo ; vim'
 
 alias rmvim='rm -rf ~/.dotfiles/vim/tmp/swap/*'
+alias shortcuts='cat ~/.dotfiles/vim/doc/shortcuts.txt | less'
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
