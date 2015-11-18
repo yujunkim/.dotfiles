@@ -91,6 +91,9 @@ Bundle 'dgryski/vim-godef'
 
 Bundle 'solarnz/thrift.vim'
 
+Bundle 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
+
 Bundle 'ntpeters/vim-better-whitespace'
 autocmd BufWritePre <buffer> StripWhitespace
 
@@ -167,6 +170,8 @@ let g:ctrlp_prompt_mappings = {
 """"""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
+" vim-react-snippets:
+Bundle "justinj/vim-react-snippets"
 " if you use Vundle, load plugins:
 Bundle 'ervandew/supertab'
 Bundle 'SirVer/ultisnips'
@@ -721,15 +726,20 @@ endfunc
 
 " Easier moving in tabs and windows
 " The lines conflict with the default digraph mapping of <C-K>
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-L> <C-W>l
-map <C-H> <C-W>h
 
 " Adjust viewports to the same size
 map <leader>= <C-W>=
 map <leader>\ <C-W>\|
 map <leader>_ <C-W>_
+
+map <Leader>j <C-W>j
+map <Leader>k <C-W>k
+map <Leader>h <C-W>h
+map <Leader>l <C-W>l
+map <C-J> :exe "resize +5"<CR>
+map <C-K> :exe "resize -5"<CR>
+map <C-L> :exe "vertical resize +30"<CR>
+map <C-H> :exe "vertical resize -30"<CR>
 
 map <C-E> $l
 imap <C-E> <esc>$a
@@ -752,8 +762,8 @@ imap <C-n> <down>
 map <S-H> gT
 map <S-L> gt
 
-map <leader>h :tabmove -1<CR>
-map <leader>l :tabmove +1<CR>
+" map <leader>h :tabmove -1<CR>
+" map <leader>l :tabmove +1<CR>
 
 nmap <silent> <leader>/ :set hlsearch!<CR>
 

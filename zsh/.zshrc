@@ -102,6 +102,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 alias ser='ssh -i ~/.ssh/hi_id_rsa 128.199.107.14'
 alias mar='ssh plmmoknn@martini.snucse.org'
+alias ubu='ssh -i ~/.ssh/hi_id_rsa parallels@10.211.55.4'
 alias cdser='cd ~/Dropbox/server'
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=/usr/local/share/python:/usr/local/bin:$PATH
