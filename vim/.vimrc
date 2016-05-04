@@ -90,6 +90,7 @@ Bundle 'fatih/vim-go'
 Bundle 'dgryski/vim-godef'
 
 Bundle 'solarnz/thrift.vim'
+Bundle 'msanders/cocoa.vim'
 
 Bundle 'mxw/vim-jsx'
 let g:jsx_ext_required = 0
@@ -405,8 +406,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=2
 set tabstop=2
+set shiftwidth=2
 
 " Linebreak on 500 characters
 set lbr
@@ -859,7 +860,6 @@ set directory=~/.dotfiles/vim/tmp/swap
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-
 " """"""""""""""""""""""""""""""
 " " => Python section
 " """"""""""""""""""""""""""""""
@@ -917,8 +917,10 @@ set directory=~/.dotfiles/vim/tmp/swap
 "
 " au FileType gitcommit call setpos('.', [0, 1, 1, 0])
 " Enable filetype plugins
-
+"
 filetype plugin on
 filetype indent on
 
 
+au Filetype python setl et ts=2 sw=2
+au Filetype objc setl et ts=4 sw=4
