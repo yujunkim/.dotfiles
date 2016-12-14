@@ -100,14 +100,13 @@ alias shortcuts='cat ~/.dotfiles/vim/doc/shortcuts.txt | less'
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
-alias ser='ssh -i ~/.ssh/hi_id_rsa 128.199.107.14'
+alias ser='ssh -i ~/.ssh/id_rsa 128.199.107.14'
 alias mar='ssh plmmoknn@martini.snucse.org'
-alias ubu='ssh -i ~/.ssh/hi_id_rsa parallels@10.211.55.4'
+alias ubu='ssh -i ~/.ssh/id_rsa parallels@10.211.55.4'
 # alias prod='ssh -i ~/.ssh/singbro.pem violet@52.79.39.32'
 alias prod='ssh -i ~/.ssh/singbro.pem violet@52.79.119.63'
 alias spot='ssh -i ~/.ssh/singbro.pem violet@52.79.155.29'
 alias cdser='cd ~/Dropbox/server'
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PATH=/usr/local/share/python:/usr/local/bin:$PATH
 export PATH=/opt/homebrew-cask/Caskroom/coqide/8.4pl5/CoqIDE_8.4pl5.app/Contents/MacOS:$PATH
 
@@ -116,3 +115,20 @@ export PATH=/opt/homebrew-cask/Caskroom/coqide/8.4pl5/CoqIDE_8.4pl5.app/Contents
 . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export NVM_DIR="/Users/yujun/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+unset PYTHONPATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/yujun/git/google/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/yujun/git/google/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/yujun/git/google/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/yujun/git/google/google-cloud-sdk/completion.zsh.inc'
+fi

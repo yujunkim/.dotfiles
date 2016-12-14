@@ -92,12 +92,16 @@ Bundle 'dgryski/vim-godef'
 Bundle 'solarnz/thrift.vim'
 Bundle 'msanders/cocoa.vim'
 
+Bundle 'leafgarland/typescript-vim'
+Bundle 'burnettk/vim-angular'
+
 Bundle 'mxw/vim-jsx'
 let g:jsx_ext_required = 0
 
 Bundle 'ntpeters/vim-better-whitespace'
 autocmd BufWritePre <buffer> StripWhitespace
 
+Bundle 'django.vim'
 
 
 """"""""""""""""""""""""""""""
@@ -922,5 +926,7 @@ filetype plugin on
 filetype indent on
 
 
-au Filetype python setl et ts=2 sw=2
+au Filetype python setl et ts=4 sw=4
 au Filetype objc setl et ts=4 sw=4
+
+au BufNewFile,BufRead *.html set filetype=htmldjango
