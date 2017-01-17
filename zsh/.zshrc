@@ -90,8 +90,6 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias tl="tmux list-sessions"
 alias ta="tmux attach-session -t"
 
-alias croak="ssh -i $HOME/.ssh/watcha_music.pem croak@ec2-54-248-17-108.ap-northeast-1.compute.amazonaws.com"
-alias sa="eval `ssh-agent`; ssh-add $HOME/.ssh/watcha_music.pem ; ssh-add $HOME/.ssh/dry.pem"
 alias memo="cd $HOME/memo ; vim"
 
 alias rmvim="rm -rf $HOME/.dotfiles/vim/tmp/swap/*"
