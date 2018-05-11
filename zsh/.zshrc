@@ -95,9 +95,9 @@ alias memo="cd $HOME/memo ; vim"
 alias rmvim="rm -rf $HOME/.dotfiles/vim/tmp/swap/*"
 alias shortcuts="cat $HOME/.dotfiles/vim/doc/shortcuts.txt | less"
 
-export GOPATH=$HOME/go
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/.go/bin
 export PATH=/usr/local/share/python:/usr/local/bin:$PATH
 export PATH=/opt/homebrew-cask/Caskroom/coqide/8.4pl5/CoqIDE_8.4pl5.app/Contents/MacOS:$PATH
 
@@ -112,6 +112,8 @@ export NVM_DIR="$HOME/.nvm"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 unset PYTHONPATH
 
 if [ -f $HOME/git/google/google-cloud-sdk/path.zsh.inc ]; then
@@ -125,3 +127,5 @@ fi
 if [ -f $HOME/.zshrc_local ]; then
   source "$HOME/.zshrc_local"
 fi
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
